@@ -4,4 +4,3 @@ veloren/assets/world/map/*.bin
 veloren/assets/voxygen/voxel/
 veloren/assets/common/
 veloren/assets/voxygen/audio/**/*.ogg
-veloren/android_build/*.apk
