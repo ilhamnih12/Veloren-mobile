@@ -1,0 +1,22 @@
+[package]
+name = "veloren-voxygen-android"
+version = "0.18.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+description = "Veloren Android Offline Singleplayer NativeActivity (Vulkan + Touch Controls + Gamepad)"
+
+[lib]
+name = "veloren_voxygen"
+crate-type = ["cdylib"]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+overflow-checks = false
+debug-assertions = false
+debug = false
+
+[workspace]
